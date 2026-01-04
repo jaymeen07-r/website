@@ -265,6 +265,7 @@ nav {
     width: 100%;
 }
 .contact-form-data {
+    background-color: #fce59a;
     padding-left: 10px;
     border: #000 2px solid;
     width: 70%;
@@ -276,6 +277,7 @@ nav {
     box-shadow: rgb(0, 0, 0, 0.4) 4px 4px 0px 0px;
 }
 #message {
+    background-color: #fce59a;
     padding-top: 10px;
     padding-left: 10px;
     border: #000 2px solid;
@@ -287,6 +289,7 @@ nav {
     box-shadow: rgb(0, 0, 0, 0.4) 4px 4px 0px 0px;
 }
 #submit {
+    background-color: #fce59a;
     font-family: agency fb;
     border: #000 2px solid;
     background-color: #ffd13b;
@@ -468,10 +471,12 @@ footer {
 
     .contact-form-data,
     #message {
+        background-color: #fce59a;
         width: 85%;
     }
 
     #submit {
+        background-color: #fce59a;
         width: 70%;
         font-size: 1.2em;
     }
