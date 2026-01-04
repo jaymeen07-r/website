@@ -1,0 +1,187 @@
+/* ================= GLOBAL ================= */
+body {
+    font-family: Agency FB;
+    background: #ffdb67;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    width: 60%;
+    margin-left: 20%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    font-size: 1.6em;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 0px;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* ================= SKILLS SECTION ================= */
+.skills-section {
+    width: 100%;
+    padding: 60px 0;
+}
+
+#skills-title {
+    font-size: 5em;
+    font-weight: bold;
+    padding-left: 0.5%;
+}
+
+.skills-description {
+    font-size: 1.6em;
+    padding-left: 7%;
+    padding-right: 20%;
+    line-height: 40px;
+    margin-top: -10px;
+}
+
+/* ================= SKILL CARDS ================= */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.skill-card {
+    background: #ffdb67;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 0px;
+    padding: 20px 30px;
+}
+
+.skill-card h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-card li {
+    font-size: 1.5em;
+    padding: 6px 0;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 80px;
+    padding: 20px 0;
+    border-top: 2px solid black;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+/* ================================================= */
+/* ================= RESPONSIVE ==================== */
+/* ================================================= */
+
+/* -------- Tablets & Small Laptops -------- */
+@media (max-width: 1024px) {
+
+    nav {
+        width: 90%;
+        margin-left: 5%;
+        gap: 50px;
+        font-size: 1.4em;
+    }
+
+    #skills-title {
+        font-size: 4em;
+    }
+
+    .skills-description {
+        font-size: 1.4em;
+        padding-right: 10%;
+    }
+
+    .skills-container {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+/* -------- Mobile Devices -------- */
+@media (max-width: 768px) {
+
+    nav {
+        width: 95%;
+        margin-left: 2.5%;
+        flex-wrap: wrap;
+        gap: 20px;
+        height: auto;
+        padding: 10px 0;
+        font-size: 1.2em;
+    }
+
+    #skills-title {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .skills-description {
+        font-size: 1.2em;
+        padding: 0 5%;
+        text-align: justify;
+        line-height: 30px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .skill-card h2 {
+        font-size: 2em;
+    }
+
+    .skill-card li {
+        font-size: 1.3em;
+    }
+
+    footer {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1.2em;
+    }
+}
+
+/* -------- Small Phones -------- */
+@media (max-width: 480px) {
+
+    nav {
+        font-size: 1em;
+    }
+
+    #skills-title {
+        font-size: 2.5em;
+    }
+
+    .skill-card {
+        padding: 15px;
+    }
+
+    .skill-card h2 {
+        font-size: 1.8em;
+    }
+
+    .skill-card li {
+        font-size: 1.2em;
+    }
+}
