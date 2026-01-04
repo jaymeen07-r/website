@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="nav-links">Home</a>
+        <a href="skills.html" class="nav-links">Skills</a>
+        <a href="projects.html" class="nav-links">Projects</a>
+        <a href="" class="nav-links">Contact</a>
+    </nav>
+    <section class="container1" id="contact-section">
+        <h2 id="contact-me">Contact Me</h2>
+        <p class="contact-description">
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.<br>
+            Feel free to reach out to me through any of the platforms below :
+        </p>
+        <div class="contact-data">
+            <p class="subtitle-1">Got feedback, ideas, or just want to say hi?<br></p>
+            <p class="subtitle-2"> We'd love to hear from you.</p>
+            <hr id="contact-hr">
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="user_name" name="user_name" class="contact-form-data"
+                    placeholder="Enter Your Name" required>
+                <input type="email" id="user_email" name="user_email" class="contact-form-data"
+                    placeholder="Enter Your Email" required>
+                <input type="text" id="user_title" name="user_title" class="contact-form-data"
+                    placeholder="Enter Your Subject" required>
+                <textarea id="message" name="message" placeholder="Enter Message Here" required></textarea>
+                <input type="hidden" name="time" id="time">
+                <button type="submit" id="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="insight-cards2">
+            <div class="insight-container-3">
+                <div class="insight-item2">
+                    <div class="insight-title"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="insight-value"><a href="mailto:jaymeenvaghela07@gmail.com" target="_blank"
+                            class="insight-value-a">Email</a></div>
+                </div>
+                <div class="insight-item2">
+                    <div class="insight-title"><i class="fa-brands fa-github"></i></div>
+                    <div class="insight-value"><a href="https://github.com/jaymeen07-r" target="_blank"
+                            class="insight-value-a">GitHub</a></div>
+                </div>
+                <div class="insight-item2">
+                    <div class="insight-title"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="insight-value"><a href="https://www.linkedin.com/in/jaymeen07r/" target="_blank"
+                            class="insight-value-a">LinkedIn</a></div>
+                </div>
+                <div class="insight-item2">
+                    <div class="insight-title"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="insight-value"><a href="https://x.com/Jaymeen07r" target="_blank"
+                            class="insight-value-a">Twitter</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <footer>
+        <p id="footer-text">© 2026 Jaymeen Vaghela. All rights reserved.</p>
+    </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("NsgDVYg4dq90clt3F");
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            document.getElementById("time").value =
+                new Date().toLocaleString("en-IN", {
+                    dateStyle: "medium",
+                    timeStyle: "short"
+                });
+
+            emailjs.sendForm(
+                "service_42j1lo8",
+                "template_ofvnogm",
+                this
+            ).then(
+                function () {
+                    alert("Message sent successfully!");
+                    document.getElementById("contact-form").reset();
+                },
+                function (error) {
+                    alert("Failed to send message");
+                    console.error("EmailJS Error:", error);
+                }
+            );
+        });
+    </script>
+
+</body>
+
+</html>
