@@ -1,10 +1,24 @@
-/* ================= GLOBAL ================= */
 body {
     font-family: Agency FB;
     background: #ffdb67;
 }
 
-/* ================= NAVBAR ================= */
+@font-face {
+    font-family: 'Agency FB';
+    src: url('fonts/AgencyFB-Reg.woff2') format('woff2'),
+            url('fonts/AgencyFB-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agency FB';
+    src: url('fonts/AgencyFB-Bold.woff2') format('woff2'),
+            url('fonts/AgencyFB-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 nav {
     width: 60%;
     margin-left: 20%;
@@ -24,7 +38,6 @@ nav {
     font-weight: bold;
 }
 
-/* ================= PROJECTS SECTION ================= */
 .projects-section {
     width: 100%;
     padding: 60px 0;
@@ -44,7 +57,6 @@ nav {
     margin-top: -10px;
 }
 
-/* ================= PROJECT CARDS ================= */
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -78,7 +90,6 @@ nav {
     color: #dc3545;
 }
 
-/* ================= FOOTER ================= */
 footer {
     width: 80%;
     margin-left: 10%;
@@ -89,11 +100,6 @@ footer {
     font-size: 1.4em;
 }
 
-/* ================================================= */
-/* ================= RESPONSIVE ==================== */
-/* ================================================= */
-
-/* -------- Tablets & Small Laptops -------- */
 @media (max-width: 1024px) {
 
     nav {
@@ -119,7 +125,6 @@ footer {
     }
 }
 
-/* -------- Mobile Devices -------- */
 @media (max-width: 768px) {
 
     nav {
@@ -165,7 +170,6 @@ footer {
     }
 }
 
-/* -------- Small Phones -------- */
 @media (max-width: 480px) {
 
     nav {
